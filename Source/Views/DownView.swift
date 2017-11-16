@@ -29,6 +29,10 @@ public class DownView: WKWebView {
         try loadHTMLView(markdownString)
     }
 
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Private Properties
 
     private let bundle: NSBundle = {
